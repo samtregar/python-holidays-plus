@@ -13,6 +13,6 @@ def pop_named(self, name):
 
     to_return = []
     for key in to_pop:
-        to_return.append(self.pop(key))
-    return to_return
+        self.pop(key)
+    return to_pop
 holidays.HolidayBase.pop_named = pop_named
