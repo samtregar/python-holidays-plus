@@ -7,12 +7,14 @@ This module adds a couple useful features to the Python holidays modules.  For e
 import holidays
 import holidays_plus
 
+from datetime import datetime
+
 # holidays, but not the racist one
-holidays = holidays.US()
-holidays.pop_named("Columbus Day")
+our_holidays = holidays.US(years=[datetime.now().year])
+our_holidays.pop_named("Columbus Day")
 
 # wait, when is Martin Luther King Day this year?
-(day,) = holidays.get_named("Martin Luther King Jr. Day")
+(day,) = our_holidays.get_named("Martin Luther King Jr. Day")
 print(f"Martin Luther King Jr. Day is on {day} this year.")
 ```
 
