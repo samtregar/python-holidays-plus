@@ -12,8 +12,8 @@ holidays = holidays.US()
 holidays.pop_named("Columbus Day")
 
 # wait, when is Martin Luther King Day this year?
-days = holidays.get_named("Martin Luther King Day")
-print("It's on {days[0]} this year.")
+(day,) = holidays.get_named("Martin Luther King Jr. Day")
+print(f"Martin Luther King Jr. Day is on {day} this year.")
 ```
 
 If you have ideas for additional functionality that might be added

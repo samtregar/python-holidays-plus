@@ -15,5 +15,9 @@ class TestBasics(unittest.TestCase):
 
     def test_get_named(self):
         self.holidays = holidays.US(years=[2004])
-        self.assertEquals(self.holidays.get_named("New Year's Day"), [date(2004, 1, 1)])
-        self.assertEquals(self.holidays.get_named("Nonexistent"), [])
+        self.assertEqual(self.holidays.get_named("New Year's Day"), [date(2004, 1, 1)])
+        self.assertEqual(self.holidays.get_named("Nonexistent"), [])
+
+        (day,) = self.holidays.get_named("Martin Luther King Jr. Day")
+        self.assertTrue(day)
+        
