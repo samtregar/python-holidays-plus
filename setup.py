@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="holidays-plus", # Replace with your own username
+    name="holidays-plus",
     version="0.0.2",
     author="Sam Tregar",
     author_email="sam@tregar.com",
