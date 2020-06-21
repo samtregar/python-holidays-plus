@@ -4,11 +4,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="holidays-plus-samtregar", # Replace with your own username
+    name="holidays-plus", # Replace with your own username
     version="0.0.1",
     author="Sam Tregar",
     author_email="sam@tregar.com",
-    description="Enhanced wrapper around the holidays library offering expanded functionality",
+    description="Enhanced add-on for the holidays library offering expanded functionality",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/samtregar/python-holidays-plus",

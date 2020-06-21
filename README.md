@@ -1,5 +1,5 @@
 # python-holidays-plus
-Enhanced wrapper around the Python-Holidays library offering expanded functionality
+Enhanced add-on for the Python-Holidays library offering expanded functionality
 
 This module adds a couple useful features to the Python holidays modules.  For example:
 
