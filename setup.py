@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="holidays-plus", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Sam Tregar",
     author_email="sam@tregar.com",
     description="Enhanced add-on for the holidays library offering expanded functionality",
